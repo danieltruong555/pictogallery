@@ -1,0 +1,262 @@
+/*HEADER */
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header{
+    background-color: #f2f2f2;
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    text-transform: uppercase;
+}
+
+
+.navbar a{
+    padding: 10px 20px;
+    margin-left: 40px;
+    color: #111111;   
+    text-decoration: none;  
+    
+}
+
+.navbar a:hover{
+    background-color: #cccccc;
+}
+
+#logo{
+    font-family: 'Vesper Libre', serif;
+    border-right: 3px solid #111; 
+    padding: 0px 30px;
+}
+
+
+/* GALLERY MAIN */
+.gallery{
+    margin: 0px 100px;
+}
+
+.gallery h1{
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.col{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-basis: 280px;
+    
+}
+.col a{
+    background-color: gray;
+    width: fit-content;
+    height: fit-content;
+}
+
+.col a img{
+    width: 320px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col h2{
+    font-style: italic;
+    max-width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.col p{
+    max-width: 100%;
+    text-align: justify;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.gallery-btn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+	border-radius:42px;
+	border:4px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:600;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.gallery-btn:hover {
+	background-color: transparent;
+}
+.gallery-btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* MODIFY MAIN */
+.modify{
+    margin: 0px 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.modify img{
+    width: 640px;
+    height: 560px;
+    margin: 0px 20px 20px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+input[type=text], textarea {
+    padding: 5px;
+    font-size: 24px;
+    border-width: 5px;
+    border-color: #e1e1e1;
+    background-color: #ffffff;
+    color: #4d4c4c;
+    border-style: outset;
+    border-radius: 12px;
+    box-shadow: 4px 2px 20px rgba(66,66,66,.88);
+    margin-bottom: 20px;
+}
+
+.modify fieldset{
+    margin: 0px 0px 20px; 
+    padding: 20px 40px; 
+    border: none;
+    text-align: center;
+    /* background-color:#6d6c6c; */
+}
+
+.modify fieldset h1{
+    color: #111111;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+.modify fieldset input[type="submit"] {
+	box-shadow:inset -1px 0px 0px -50px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:31px;
+	border:5px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 30px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+    text-align: center;
+}
+.modify fieldset input[type="submit"]:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.modify fieldset input[type="submit"]:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-transform: none;
+    background-color: #6d6c6c;
+    margin: 0px 100px;
+}
+
+.footer-col{
+    /* background-color: teal; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    text-decoration: none;
+    flex-basis: 300px;
+}
+
+.footer-col a{
+    margin: 0px 60px 10px;
+    color: white;
+}
+
+.footer-col a:hover{
+    color: cornflowerblue;
+}
+
+.contact{
+    height: fit-content;
+    text-align: left;
+    text-transform: none;
+    color: white; 
+}
+
+footer h3{
+    margin: 10px 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
+.contact h4{
+    margin: 10px 60px;
+}
+
+.contact p{   
+    padding-bottom: 20px;
+    width: 300px;
+    margin: 10px 60px 10px;
+    border-bottom: 3px solid white; 
+}
+
+.smbar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size:60px;
+    color:white;
+}
+
+
